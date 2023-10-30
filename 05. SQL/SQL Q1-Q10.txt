@@ -1,0 +1,10 @@
+01. SELECT deptno, COUNT(empno) FROM empl GROUP BY deptno;
+02. SELECT deptno, SUM(sal) FROM empl GROUP BY deptno;
+03. SELECT deptno, COUNT(empno) FROM empl GROUP BY deptno HAVING COUNT(empno) > 2;
+04. SELECT job, SUM(sal) FROM empl GROUP BY job HAVING COUNT(job) > 2;
+05. SELECT job, MIN(sal), MAX(sal) FROM empl GROUP BY job;
+06. SELECT city, COUNT(empno) FROM empl GROUP BY city HAVING city IN ('Kolkata', 'Delhi', 'Mumbai');
+07. SELECT deptno, AVG(sal) FROM empl GROUP BY deptno HAVING COUNT(empno) < 5;
+08. SELECT city, COUNT(empno) FROM empl WHERE deptno = 30 GROUP BY city;
+09. SELECT city, AVG(sal), COUNT(empno) FROM empl GROUP BY city HAVING COUNT(empno) > 2;
+10. SELECT deptno, COUNT(empno), AVG(sal) FROM empl GROUP BY deptno HAVING COUNT(empno) = 2;
