@@ -19,6 +19,7 @@ def POP():
 
 def TRAVERSE():
     if len(stack) > 0:
+        print('Elements of stack:')        
         for node in stack:
             print(node)
     else:
